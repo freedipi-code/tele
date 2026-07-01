@@ -13,7 +13,9 @@ const config = {
   webhook: {
     domain: process.env.WEBHOOK_DOMAIN || '',
     path: process.env.WEBHOOK_PATH || '/api/telegram/webhook',
-    secret: process.env.WEBHOOK_SECRET || '',
+    secret: process.env.WEBHOOK_SECRET
+      ? require('crypto').createHash('sha256').update(process.env.WEBHOOK_SECRET).digest('hex')
+      : '',
     port: parseInt(process.env.PORT || '3000', 10),
   },
   wallets: {
