@@ -4,28 +4,19 @@ const { resolveImage } = require('../../utils/image');
 
 function buildWelcomeText() {
   const lines = [
-    `${shop.emoji} *Welcome to ${shop.name}* ${shop.emoji}`,
-    '',
-    shop.shippingLine,
-    '',
-    shop.dispatchLine,
-    '',
-    shop.bulkLine,
-    '',
-    'Select an option below to get started:',
-    '',
-    '━━━━━━━━━━━━━━',
-    '',
-    'Use /help for a list of all commands',
-    '',
-    '👤 *Owner Status*',
-    shop.ownerUsername
-      ? `${shop.ownerStatusLine}  ([@${shop.ownerUsername}](https://t.me/${shop.ownerUsername}))`
-      : shop.ownerStatusLine,
-    '',
-    `[${shop.footerText}](${shop.footerLink})`,
+    '◆ DANK OF WALES',
+    '▬▬▬▬▬▬▬▬▬▬▬▬',
+    '🪙 BTC, LTC',
+    '⭐ 4.9/5',
+    '🧾 378 sales',
+    '📦 Not set',
+    '▬▬▬▬▬▬▬▬▬▬▬▬',
+    '🔗 Linked chanel account: @Dankofwales0',
+    '🔒 Verification phrase not set yet',
+    '▬▬▬▬▬▬▬▬▬▬▬▬',
+    'Compare this phrase across legit shop bots and your signed-in web account.',
   ];
-  return lines.filter((l) => l !== null).join('\n');
+  return lines.join('\n');
 }
 
 async function showHome(ctx) {

@@ -7,10 +7,10 @@
 
 module.exports = {
   // Display name shown in welcome message header
-  name: "Trappucino's Cafe",
+  name: "DANK OF WALES",
 
   // Emoji prepended/appended to the shop name in welcome
-  emoji: "☕",
+  emoji: "◆",
 
   // Shipping policy line (1-2 short lines max)
   shippingLine: "🇬🇧 Uk Shipping",
@@ -20,7 +20,7 @@ module.exports = {
   bulkLine: "🎫 For bulk enquiries, please open a ticket  Select an option below to get started",
 
   // Channel / community
-  channelUrl: "https://t.me/Trappucinoscafe0",            // e.g. "https://t.me/your_channel" — empty hides the button
+  channelUrl: "https://t.me/Dankofwales0",            // e.g. "https://t.me/your_channel" — empty hides the button
   channelLabel: "Join our Channel",
 
   // Owner / support contact (Telegram username without @)
@@ -28,14 +28,14 @@ module.exports = {
   ownerStatusLine: "🟢 Online",  // overridden if you want dynamic status later
 
   // Footer
-  footerLink: "https://t.me/trappuccinosscafe_ryzebot",
-  footerText: "Powered by Trappucino's Cafe",
+  footerLink: "https://t.me/dankofwales0bot",
+  footerText: "Powered by Dank of Wales",
 
   // Welcome cover image (path to local file OR public URL OR empty for text-only)
   // Examples:
   //   "assets/welcome.jpg"
   //   "https://yourcdn.com/cover.jpg"
-  welcomeImage: "",
+  welcomeImage: "images/welcome.jpg",
 
   // Information page content (shown when user clicks ℹ️ Information)
   information: [

@@ -6,7 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "DATABASE_URL=file:./dev.db BOT_MODE=polling node src/index.js",
+    "dev": "BOT_MODE=polling node src/index.js",
     "build": "prisma generate && prisma db push",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
@@ -14,7 +14,8 @@
     "db:seed": "node prisma/seed.js",
     "db:studio": "prisma studio",
     "data:export": "node scripts/export-data.js",
-    "data:import": "node scripts/import-data.js"
+    "data:import": "node scripts/import-data.js",
+    "data:sync:remote": "node scripts/sync-local-to-remote.js"
   },
   "dependencies": {
     "@prisma/client": "^5.22.0",
