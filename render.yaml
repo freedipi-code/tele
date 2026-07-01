@@ -28,6 +28,6 @@ services:
           property: connectionString
 
 databases:
-  - name: telegram-shop-db
+  - name: telegram-shop-db-dank
     plan: free
     databaseName: telegram_shop
