@@ -29,5 +29,5 @@ services:
 
 databases:
   - name: telegram-shop-db-dank
-    plan: free
+    plan: basic-256mb
     databaseName: telegram_shop
